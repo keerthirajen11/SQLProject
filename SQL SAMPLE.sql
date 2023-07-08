@@ -1,0 +1,12 @@
+create database Keerthana;
+use Keerthana;
+create table Book(BookTitle varchar(50),Author varchar(20),genre varchar(30),publication_year int,price int);
+insert into Book values('Short_Strories','Clara','Stories','2006',2000);
+insert into Book values('Android_Os','Elon','TEchnology','2016',3000);
+insert into Book values('Quantum_Mechanics','Feyman','Science','2002',4200);
+insert into Book values('Java','James','Programming','1999',3000);
+insert into Book values('Python','John','Programming','2009',2500);
+select *from Book;
+select BookTitle from Book;
+update Book set price=3700 where BookTitle="Android_Os";
+delete from Book where BookTitle="Java";
